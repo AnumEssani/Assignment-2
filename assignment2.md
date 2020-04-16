@@ -88,3 +88,34 @@ surf = "1"
 
 ```
 Nice! This is going swimmingly!
+
+# Step 3: Fetch data
+
+Okay, final step. Let’s modify the main.rs file. We’ll make it as simple as possible. Here’s what we want to use:
+
+```
+
+use async_std::task;
+use surf;
+
+// fetch data from a url and return the results as a string.
+// if an error occurs, return the error.
+async fn fetch(url: &str) -> Result<String, surf::Exception> {
+    surf::get(url).recv_string().await
+}
+
+// execute the fetch function and print the results
+async fn execute() {
+    match fetch("https://pokeapi.co/api/v2/move/surf").await {
+        Ok(s) => println!("Fetched results: {:#?}", s),
+        Err(e) => println!("Got an error: {:?}", e),
+    };
+}
+
+fn main() {
+    task::block_on(execute());
+    // ^ start the future and wait for it to finish
+}
+
+```
+That’s all the code you need. In fact, it’s more than what you need, as some parts have been broken up for legibility. Let’s walk through it!
