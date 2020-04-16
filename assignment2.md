@@ -69,3 +69,22 @@ Let’s create a new application! Simply run this command in your preferred dire
 ```
      cargo new async-basics
 ```
+
+# Step 2: Dependencies
+
+We’re going to be using async-std for spawning tasks, and surf to fetch data from the API. Let’s add them to the Cargo.toml file. Your whole file should look something like this:
+
+```
+
+[package]
+name = "async-basics"
+version = "0.1.0"
+authors = ["Your Name <your.email@provider.tld>"]
+edition = "2018"
+
+[dependencies]
+async-std = "1"
+surf = "1"
+
+```
+Nice! This is going swimmingly!
