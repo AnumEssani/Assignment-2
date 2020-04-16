@@ -123,3 +123,7 @@ That’s all the code you need. In fact, it’s more than what you need, as some
 # Use statements:
 
 Nothing exciting here. Just importing the crates we declared in the Cargo.toml file:surfand async_std.
+
+# Fetch:
+
+This is simply a thin wrapper around the surf::get function which returns either the payload as a String or an Exception if something went wrong.
