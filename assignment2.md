@@ -59,3 +59,6 @@ As we can see, the second future, neg_task, started executing as soon as it was 
 
 As mentioned briefly above, you need to go to an external library to do asynchronous programming in Rust.
 
+# A minimal async example!
+
+Make sure you have at least version 1.39 of Rust and the cargo available for preparation.To create a super simple application that fetches some Pokémon data and prints it to the console.
