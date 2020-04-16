@@ -62,3 +62,10 @@ As mentioned briefly above, you need to go to an external library to do asynchro
 # A minimal async example!
 
 Make sure you have at least version 1.39 of Rust and the cargo available for preparation.To create a super simple application that fetches some Pokémon data and prints it to the console.
+
+# Step 1: creating the application
+Let’s create a new application! Simply run this command in your preferred directory:
+
+```
+     cargo new async-basics
+```
