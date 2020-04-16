@@ -131,3 +131,10 @@ This is simply a thin wrapper around the surf::get function which returns either
 # Execute:
 
 This function calls fetch with the endpoint for the move Surf, waits for the result to return, and then matches on the result. If everything went well: print the output. Else: print the error.
+
+# Main:
+
+task::block_on is a synchronous counterpart to task::spawn that starts an asynchronous operation, but blocks until it has finished.
+
+# Step 4: Extend it!
+Hey, you made it this far; congrats! 
