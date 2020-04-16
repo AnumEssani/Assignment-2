@@ -127,3 +127,7 @@ Nothing exciting here. Just importing the crates we declared in the Cargo.toml f
 # Fetch:
 
 This is simply a thin wrapper around the surf::get function which returns either the payload as a String or an Exception if something went wrong.
+
+# Execute:
+
+This function calls fetch with the endpoint for the move Surf, waits for the result to return, and then matches on the result. If everything went well: print the output. Else: print the error.
