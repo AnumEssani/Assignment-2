@@ -1,3 +1,6 @@
 # Summary On Article Of Async
 
 Hot off the heels of RustFest Barcelona and the stabilization of async/. Await. We’ll be creating a super simple application that fetches some data from the internet using the our newfound async abilities.The stabilization of async/.await also coincides with another case with recent entries in the mainline pokeman games.
+
+# What does asyncmean?
+       So asynchronous programming lets us run multiple of these IO-bound computations at the same time on a single thread. Multi-threading is ideal for when you’ve got computationally intensive tasks (so-called CPU-bound tasks) that can be spread across multiple, separated cores. They can run at the same time because when they’re waiting for a response, they’re just idle, so we can let the computer keep working on something that isn’t waiting. Concurrent programming is better suited for when the task spends a lot of time waiting, such as for a response from a server. In Rust, values that are ‘awaitable’ are known as ‘futures’.
